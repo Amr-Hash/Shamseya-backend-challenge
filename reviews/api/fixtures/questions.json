@@ -27,48 +27,8 @@
         "model": "api.question",
         "pk": 4,
         "fields": {
-          "text": "What is your desired cuntry to visit?",
-          "choices": [3,4,5,6,7]
-        }
-    },
-    {
-        "model": "api.question",
-        "pk": 5,
-        "fields": {
-          "text": "Did your problem was solved?",
-          "choices": [1,2]
-        }
-    },
-    {
-        "model": "api.question",
-        "pk": 6,
-        "fields": {
-          "text": "Would you consider visiting us again?",
-          "choices": [1,2]
-        }
-    },
-    {
-        "model": "api.question",
-        "pk": 7,
-        "fields": {
-          "text": "Do you consider python to be the best programming language for automation?",
-          "choices": [16,17,18,19,20]
-        }
-    },
-    {
-        "model": "api.question",
-        "pk": 8,
-        "fields": {
           "text": "Do you agree that Bitcoin will ultimately be worth nothing?",
           "choices": [16,17,18,19,20]
-        }
-    },
-    {
-        "model": "api.question",
-        "pk": 9,
-        "fields": {
-          "text": "Do you consider yourself a good programmer?",
-          "choices": [1,2]
         }
     }
 ]
