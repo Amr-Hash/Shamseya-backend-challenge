@@ -30,7 +30,7 @@ with open(f'{cur_path}\\reviews.json', 'w') as f_rev:
             random_days = random.randint(0, number_of_days)
             date = (first_date + timedelta(days=random_days)).isoformat()
             review = {
-                "model": "review.review",
+                "model": "api.review",
                 "pk": review_pk,
                 "fields": {
                     "submitted_at": date
@@ -44,7 +44,7 @@ with open(f'{cur_path}\\reviews.json', 'w') as f_rev:
             for count, question in enumerate(review_questions):
                 choice = random.choice(question['fields']['choices'])
                 answer = {
-                    "model": "review.answer",
+                    "model": "api.answer",
                     "pk": ((review_pk * 4) + count),
                     "fields": {
                         "review": review_pk,

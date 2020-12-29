@@ -1,6 +1,6 @@
 [
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 1,
         "fields": {
           "text": "What is Your Gender?",
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 2,
         "fields": {
           "text": "What is Your Age?",
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 3,
         "fields": {
           "text": "Whats is your birth country?",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 4,
         "fields": {
           "text": "What is your desired cuntry to visit?",
@@ -32,7 +32,7 @@
         }
     },
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 5,
         "fields": {
           "text": "Did your problem was solved?",
@@ -40,7 +40,7 @@
         }
     },
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 6,
         "fields": {
           "text": "Would you consider visiting us again?",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 7,
         "fields": {
           "text": "Do you consider python to be the best programming language for automation?",
@@ -56,7 +56,7 @@
         }
     },
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 8,
         "fields": {
           "text": "Do you agree that Bitcoin will ultimately be worth nothing?",
@@ -64,7 +64,7 @@
         }
     },
     {
-        "model": "review.question",
+        "model": "api.question",
         "pk": 9,
         "fields": {
           "text": "Do you consider yourself a good programmer?",

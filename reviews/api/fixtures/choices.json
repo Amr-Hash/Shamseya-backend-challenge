@@ -1,13 +1,13 @@
 [
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 1,
       "fields": {
         "text": "yes"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 2,
       "fields": {
         "text": "no"
@@ -16,35 +16,35 @@
 
 
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 3,
       "fields": {
         "text": "Egypt"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 4,
       "fields": {
         "text": "China"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 5,
       "fields": {
         "text": "Palestine"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 6,
       "fields": {
         "text": "New Zealand"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 7,
       "fields": {
         "text": "Singal"
@@ -53,42 +53,42 @@
 
 
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 8,
       "fields": {
         "text": "10-20"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 9,
       "fields": {
         "text": "21-30"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 10,
       "fields": {
         "text": "31-45"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 11,
       "fields": {
         "text": "46-60"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 12,
       "fields": {
         "text": "61-80"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 13,
       "fields": {
         "text": "+80"
@@ -96,14 +96,14 @@
     },
 
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 14,
       "fields": {
         "text": "Male"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 15,
       "fields": {
         "text": "Female"
@@ -111,35 +111,35 @@
     },
 
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 16,
       "fields": {
         "text": "Strongly disagree"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 17,
       "fields": {
         "text": "Disagree"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 18,
       "fields": {
         "text": "Neutral / Neither agree nor disagree"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 19,
       "fields": {
         "text": "Agree"
       }
     },
     {
-      "model": "review.choice",
+      "model": "api.choice",
       "pk": 20,
       "fields": {
         "text": "Strongly agree"
