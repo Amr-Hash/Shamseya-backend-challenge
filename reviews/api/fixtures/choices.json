@@ -128,7 +128,7 @@
       "model": "api.choice",
       "pk": 18,
       "fields": {
-        "text": "Neutral / Neither agree nor disagree"
+        "text": "Neutral"
       }
     },
     {

@@ -1,5 +1,6 @@
 from django.core.management import BaseCommand, call_command
 from django.contrib.auth.models import User
+from api.models import Day
 from django.conf import settings
 import os, json, sys, random
 from datetime import datetime, timedelta, timezone
@@ -35,12 +36,15 @@ class Command(BaseCommand):
                 answers_list = []
                 for review_pk in range(options['number_of_reviews']):
                     random_days = random.randint(0, number_of_days)
-                    date = (first_date + timedelta(days=random_days)).isoformat()
+                    date = first_date + timedelta(days=random_days)
+                    day, created = Day.objects.get_or_create(date=date.date())
+                    date = date.isoformat()
                     review = {
                         "model": "api.review",
                         "pk": review_pk,
                         "fields": {
-                            "submitted_at": date
+                            "submitted_at": date,
+                            "day": day.pk
                         }
                     }
                     reviews_list.append(review)
