@@ -1,12 +1,17 @@
 from rest_framework import viewsets
 from django.db.models import Count
-from .serializers import ReviewSerializer, AnswerSerializer
+from .serializers import ReviewSerializer
+from rest_framework.permissions import IsAdminUser
+from rest_framework.authentication import BasicAuthentication
 from .models import Review, Answer
 
 
 class ReviewViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = ReviewSerializer
     queryset = Review.objects.values('submitted_at')
+
+    authentication_classes = [BasicAuthentication]
+    permission_classes = [IsAdminUser]
     def get_queryset(self):
         from_date = self.request.query_params.get('from', None)
         to_date = self.request.query_params.get('to', None)

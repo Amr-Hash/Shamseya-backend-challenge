@@ -1,0 +1,32 @@
+[
+    {
+        "username": "superuser",
+        "email": "superuser@shamseya.org",
+        "password": "P@ssw0rd",
+        "first_name": "Super",
+        "last_name": "User",
+        "is_superuser": true,
+        "is_staff": false,
+        "is_active": true
+    },
+    {
+        "username": "staff",
+        "email": "staff@shamseya.org",
+        "password": "P@ssw0rd",
+        "first_name": "Staff",
+        "last_name": "User",
+        "is_superuser": false,
+        "is_staff": true,
+        "is_active": true
+    },
+    {
+        "username": "active",
+        "email": "active@shamseya.org",
+        "password": "P@ssw0rd",
+        "first_name": "Active",
+        "last_name": "User",
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true
+    }
+]
