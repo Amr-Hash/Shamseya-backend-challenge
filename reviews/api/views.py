@@ -1,17 +1,22 @@
 from rest_framework import viewsets
 from django.db.models import Count
 from .serializers import ReviewSerializer
-from rest_framework.permissions import IsAdminUser
-from rest_framework.authentication import BasicAuthentication
+from rest_framework.permissions import IsAdminUser, BasePermission
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication
 from .models import Review, Answer
 
+class IsStaffOrSuperUser(BasePermission):
+    def has_permission(self, request, view):
+        return request.user and (request.user.is_superuser or request.user.is_staff)
 
 class ReviewViewSet(viewsets.ReadOnlyModelViewSet):
+    
+    authentication_classes = [BasicAuthentication, SessionAuthentication]
+    permission_classes = [IsStaffOrSuperUser]
+
     serializer_class = ReviewSerializer
     queryset = Review.objects.values('submitted_at')
 
-    authentication_classes = [BasicAuthentication]
-    permission_classes = [IsAdminUser]
     def get_queryset(self):
         from_date = self.request.query_params.get('from', None)
         to_date = self.request.query_params.get('to', None)
