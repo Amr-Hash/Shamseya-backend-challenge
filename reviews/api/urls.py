@@ -3,8 +3,6 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register(r'reviews', views.ReviewViewSet)
-router.register(r'answers', views.AnswerViewSet)
 router.register(r'days', views.DayViewSet)
 
 urlpatterns = [

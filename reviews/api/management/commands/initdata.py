@@ -2,7 +2,7 @@ from django.core.management import BaseCommand, call_command
 from django.contrib.auth.models import User
 from api.models import Day
 from django.conf import settings
-import os, json, sys, random
+import os, json, random
 from datetime import datetime, timedelta, timezone
 
 class Command(BaseCommand):
