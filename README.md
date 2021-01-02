@@ -7,7 +7,7 @@
 3. Create a new virtualenv : `python3 -m venv venv` for windows may use `python -m venv venv`.
 4. Activate virtualenv `Mac OS / Linux`: `source venv/bin/activate` , `Windows`: `venv\Scripts\activate`.
 5. Install requiremnts: `pip install -r requirements.txt`.
-6. Create .env file using .env.example or add to Environment variables for Windows users.
+6. Create `.env` file using `.env.example`.
 7. Make migrations: `python reviews/manage.py makemigrations`.
 8. Migrate Database: `python reviews/manage.py migrate`.
 9. Seed Data into Database: `python reviews/manage.py initdata <number_of_reviews:optional(default:4000)>`.
@@ -24,6 +24,8 @@
 ## Usage
 * Using postman: send GET request to `http://127.0.0.1:8000/api/days?from=2018-01-01&to=2020-12-13`.
 > :Note: **from & to**: are totally optional you could use them both or just one of them or neither.
+
+> :Note: **You could use saved postman collection**: `Shamseya Backend Challenge.postman_collection.json`.
 * Use basic authintication for superuser or staff user to be able to get results.
 * Results
     ```
@@ -64,4 +66,3 @@ Number of Queries : 3
 Finished in : 2.12s
 [02/Jan/2021 23:03:34] "GET /api/days/?from=2018-01-01&to=2018-03-31 HTTP/1.1" 200 379616
 ```
-

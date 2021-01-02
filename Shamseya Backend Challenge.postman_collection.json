@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "8d13eed5-b3c5-46e3-bd3c-7b29a886eabb",
+		"name": "Shamseya Backend Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Reviews",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/days?from=2020-12-01&to=2020-12-03",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"days"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2020-12-01"
+						},
+						{
+							"key": "to",
+							"value": "2020-12-03"
+						}
+					]
+				},
+				"description": "from: starting date (optional)\r\nto: Ending date (optional)\r\n\r\nuse basic authintication for (superuser or staff users)"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
