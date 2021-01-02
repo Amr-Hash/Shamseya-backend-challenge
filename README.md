@@ -1,4 +1,4 @@
-# ![Shamseya Backend Challenge](project-logo.png)
+# ![Shamseya Backend Challenge](project-logo.jpg)
 
 ## Installation
 
