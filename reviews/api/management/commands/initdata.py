@@ -36,7 +36,10 @@ class Command(BaseCommand):
                 answers_list = []
                 for review_pk in range(options['number_of_reviews']):
                     random_days = random.randint(0, number_of_days)
-                    date = first_date + timedelta(days=random_days)
+                    random_hours = random.randint(0, 23)
+                    random_minutes = random.randint(0,59)
+                    random_seconds = random.randint(0,59)
+                    date = first_date + timedelta(days=random_days, hours=random_hours, minutes=random_minutes, seconds=random_seconds)
                     day, created = Day.objects.get_or_create(date=date.date())
                     date = date.isoformat()
                     review = {
