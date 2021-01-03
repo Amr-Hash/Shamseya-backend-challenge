@@ -59,7 +59,7 @@
     * with status code `200` for authenticated and authorized users.
 
 ## Debugging
-* For every succesful request on the runnig server command this lines would expalin how man query was made for this request and the time it takes to handle the request
+* For every succesful request lines would be printed to terminal that tuns the program to expalin how many query was made for this request and the time it takes to handle the request
 ```
 Function : list
 Number of Queries : 3
